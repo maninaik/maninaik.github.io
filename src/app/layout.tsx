@@ -4,7 +4,7 @@ import './globals.css'
 import Nav from '@/components/nav'
 import SocialHandles from '@/components/social-handles'
 import Footer from '@/components/footer'
-
+import { GoogleAnalytics } from '@next/third-parties/google'
 export const metadata: Metadata = {
 	title: 'Mani Naik',
 	description: "Mani Naik's portfolio",
@@ -30,6 +30,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<GoogleAnalytics gaId="GTM-MMMRMN8P" />
 			<body className={`${inter.variable} ${roboto_mono.variable}`}>
 				<Nav />
 				<SocialHandles className="hidden md:block" />
