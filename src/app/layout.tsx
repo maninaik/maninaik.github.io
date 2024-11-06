@@ -31,6 +31,8 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<GoogleAnalytics gaId="GTM-MMMRMN8P" />
+			<GoogleAnalytics gaId="G-EBGXTQY66Z" />
+
 			<body className={`${inter.variable} ${roboto_mono.variable}`}>
 				<Nav />
 				<SocialHandles className="hidden md:block" />
